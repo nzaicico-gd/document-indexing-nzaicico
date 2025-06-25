@@ -1,0 +1,53 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1,
+    "similarity": {
+      "default": {
+        "type": "boolean"
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "name": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "description": {
+        "type": "text",
+        "analyzer": "standard"
+      },
+      "category": {
+        "type": "keyword"
+      },
+      "brand": {
+        "type": "keyword"
+      },
+      "price": {
+        "type": "double"
+      },
+      "currency": {
+        "type": "keyword"
+      },
+      "available": {
+        "type": "boolean"
+      },
+      "stock": {
+        "type": "integer"
+      },
+      "color": {
+        "type": "keyword"
+      },
+      "size": {
+        "type": "keyword"
+      },
+      "lastUpdated": {
+        "type": "date"
+      }
+    }
+  }
+}

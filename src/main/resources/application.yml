@@ -1,0 +1,9 @@
+spring:
+  application.name: document-indexing-nzaicico
+  elasticsearch:
+    uris: ${ELASTICSEARCH_URI:http://localhost:9200}
+
+index:
+  alias: products_index_document_indexing_nzaicico
+  settings: classpath:products/index_settings.json
+  bulk-data: classpath:products/bulk_data.json
